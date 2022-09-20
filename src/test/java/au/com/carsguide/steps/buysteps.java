@@ -60,9 +60,11 @@ public class buysteps {
         new HomePage().clickonused();
     }
 
-    @Then("^I should see the make in \"([^\"]*)\"$")
-    public void iShouldSeeTheMakeIn(String mess)  {
-        Assert.assertEquals(mess ,new NewAndUsedCarPage().verifyTextSuccessfully(mess));
 
+
+    @Then("^I should see the \"([^\"]*)\" in results$")
+    public void iShouldSeeTheInResults(String text) throws InterruptedException {
+        Thread.sleep(1000);
+        Assert.assertTrue(new NewAndUsedCarPage().verifyTextSuccessfully().contains(text));
     }
 }

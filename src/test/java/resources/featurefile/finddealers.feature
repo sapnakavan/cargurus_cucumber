@@ -10,12 +10,11 @@ Feature: Find the dealers and verify
 
 
     Examples:
-      | dealersName           |
-
-      | 101 Auto Centre       |
-      | 168 Motors            |
-      | 1st Choice Car City   |
-      | 3 Point Motors - New  |
+      | dealersName |
       | 3 Point Motors Epping |
-      | 3 Point Motors Kew    |
-      | 365 CAR SALES         |
+      | 4WD Specialist Group |
+      | 5 Star Auto |
+      | A & M Car Sales Pty Ltd |
+      | A1 MOTORS COMPANY |
+      | ANDREA MOTORI SERVICE |
+      | Oxford Motors|

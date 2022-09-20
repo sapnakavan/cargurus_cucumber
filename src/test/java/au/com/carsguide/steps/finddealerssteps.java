@@ -15,8 +15,6 @@ public class finddealerssteps {
     public void iAmOnHomepage() {
     }
 
-
-
     @And("^I click on 'Find a Dealer' page$")
     public void iClickOnFindADealerPage() {
         new HomePage().clickonFindDealer();

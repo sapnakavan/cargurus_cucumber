@@ -46,8 +46,10 @@ public class NewAndUsedCarPage extends Utility {
    @FindBy(xpath = "//span[contains(text(),'We did find these cars that almost match your criteria')]")
    WebElement r1;
 
-    public String verifyTextSuccessfully(String text) {
-        WebElement result = driver.findElement(By.xpath("//h1[contains(text(),'" + text + "')]"));
+   @CacheLookup
+   @FindBy(xpath = "//h1[@class='listing-search-title']")
+   WebElement result;
+    public String verifyTextSuccessfully() {
         return getTextFromElement(result);
     }
 
